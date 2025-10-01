@@ -1,38 +1,42 @@
-.form {
+.contactForm {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.label {
-  font-weight: bold;
-  color:#d42626;
-   
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
 }
 
 .input {
-  margin-top: 5px;
-  padding: 5px;
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 14px;
+  border: 2px solid #bfdbfe;
+  border-radius: 8px;
   font-size: 1rem;
-margin-left: 10px;
-
+  outline: none;
+  background: #f9fafb;
+  transition: all 0.3s ease;
 }
 
-.button {
-   
-    width: 150px;
-    margin-left: 80px;
-  padding: 8px 12px;
-  background-color: #69202a;
-  color: white;
+.input:focus {
+  border-color:  #ff4d4d;
+  background: #ffffff;
+  box-shadow: 0 0 6px rgba(30, 58, 138, 0.3);
+}
+
+.submitButton {
+  background:  #ff4d4d;
+  color: #fff;
   border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-.button:hover{
-    background-color:rgb(209, 61, 61);
-}
-.submitButton{
-  margin-left:30px;
+
+.submitButton:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
 }
